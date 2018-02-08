@@ -1,0 +1,323 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Regular.eot');
+    src: url('../font/Montserrat-Regular.woff2') format('woff2'),
+         url('../font/Montserrat-Regular.woff') format('woff'),
+         url('../font/Montserrat-Regular.ttf') format('truetype'),
+         url('../font/Montserrat-Regular.svg#Montserrat-Regular') format('svg'),
+         url('../font/Montserrat-Regular.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Bold.eot');
+    src: url('../font/Montserrat-Bold.woff2') format('woff2'),
+         url('../font/Montserrat-Bold.woff') format('woff'),
+         url('../font/Montserrat-Bold.ttf') format('truetype'),
+         url('../font/Montserrat-Bold.svg#Montserrat-Bold') format('svg'),
+         url('../font/Montserrat-Bold.eot?#iefix') format('embedded-opentype');
+    font-weight: bold;
+    font-style: normal;
+  }    
+  @font-face {
+    font-family: 'Montserrat-semibold';
+    src: url('../font/Montserrat-SemiBold.eot');
+    src: url('../font/Montserrat-SemiBold.woff2') format('woff2'),
+         url('../font/Montserrat-SemiBold.woff') format('woff'),
+         url('../font/Montserrat-SemiBold.ttf') format('truetype'),
+         url('../font/Montserrat-SemiBold.svg#Montserrat-SemiBold') format('svg'),
+         url('../font/Montserrat-SemiBold.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }  
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-ExtraBold.eot');
+    src: url('../font/Montserrat-ExtraBold.woff2') format('woff2'),
+         url('../font/Montserrat-ExtraBold.woff') format('woff'),
+         url('../font/Montserrat-ExtraBold.ttf') format('truetype'),
+         url('../font/Montserrat-ExtraBold.svg#Montserrat-ExtraBold') format('svg'),
+         url('../font/Montserrat-ExtraBold.eot?#iefix') format('embedded-opentype');
+    font-weight: bolder;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../font/Montserrat-Light.eot');
+    src: url('../font/Montserrat-Light.woff2') format('woff2'),
+         url('../font/Montserrat-Light.woff') format('woff'),
+         url('../font/Montserrat-Light.ttf') format('truetype'),
+         url('../font/Montserrat-Light.svg#Montserrat-Light') format('svg'),
+         url('../font/Montserrat-Light.eot?#iefix') format('embedded-opentype');
+    font-weight: lighter;
+    font-style: normal;
+        }
+$yellow-block: rgba(241, 193, 69, 0.9);
+$blue-block:#1f252a;
+$lightblue-block: #485c6a;
+$transperent-block: rgba(109, 180, 227, 0.5);
+
+$basic-text: 20px 'Montserrat';
+$yellow-text: #efc65e;
+$white-text: #ffffff;
+
+$main-left-margin: 108px;
+$main-right-margin: 115px;
+$vertical-line-width: 386px;
+    
+  *{
+      margin: 0;
+      padding: 0;
+  }
+  body *{
+      box-sizing: border-box;
+  }
+  body{
+    background: $blue-block;
+  }
+// @media screen and (max-width: 1366px){
+    $full-width: 1366px;
+    .container{
+        width: $full-width;
+        margin: 0 auto;
+    }
+    .header{
+    height: 358px;
+    background: $white-text;
+    display: flex;
+    justify-content: space-between;
+    
+    }
+    .logo-container{
+        padding-top: 137px;
+        overflow: hidden;
+    }
+    .vertical-line{
+        width: $vertical-line-width;
+        height: 100%;
+        margin-left: $main-left-margin;
+
+        padding-left: 62px;
+        background: $yellow-block;
+    }
+    .logo-div{
+        width: 265px;
+        height: 118px;
+        // border: 1px solid black;
+    }
+    .logo{
+        margin: -30px 0 0 -8px;
+        font-family: 'Montserrat';
+        font-size: 114px;
+        font-weight: bolder;
+        text-transform: uppercase;
+        color: $white-text;
+    }
+
+    .logo-text{
+        margin: -24px -9px 0 -4px;
+
+        font-family: 'Montserrat';
+        font-size: 32px;
+        font-weight: lighter;
+        color: $white-text;
+        text-transform: uppercase;
+    }
+    .slogan-container{
+        display: flex;
+        float: right;
+        width: 746px;
+        height: 120px;
+        margin-top: 134px;
+
+        align-items: center;
+        justify-content: flex-end;
+        text-align: right;
+
+        // border: 1px solid black;
+    }
+    .slogan-text{
+        font-family: 'Montserrat';
+        font-size: 39px;
+        font-weight: bolder;
+        color: $yellow-text;
+    }
+    .slogan-marker{
+        width: 114px;
+        height: 100%;
+        margin-left: 35px;
+        background: $yellow-block;
+    }
+    .content-container{
+        display: flex;
+        justify-content: space-between;
+        background: $blue-block url('../img/bg.jpg') center bottom/100% auto no-repeat;
+        width: 100%;
+        height: 1393px;
+    }
+    .left-content-block{
+        padding-top: 315px;
+    }
+    .marker{
+        height: 24px;
+        width: 81px;
+        background: $white-text;
+    }
+    .marker-1{
+        margin-bottom: 27px;
+    }
+    .small-text{
+        font: $basic-text;
+        color: $white-text;
+        width: 265px;
+    }
+    .marker-2{
+        margin: 208px 0 46px 0;
+    }
+    .big-text{
+        font-family: 'Montserrat-semibold';
+        font-size: 38px;
+        color: $white-text;
+    }
+    .right-content-block{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+    }
+    .greyline{
+        height: 25px;
+        width: 464px;
+        align-self: flex-end;
+        margin-bottom: 62px;
+        // z-index: 2;
+        background: #b2afb0;
+    }
+    .content-block-1{
+        padding-right: $main-right-margin;
+        text-align: right;
+        h2{
+            margin-top: -10px;
+            margin-bottom: -9px;
+
+            font-family: 'Montserrat';
+            font-size: 101px;
+            font-weight: bolder;
+            color: $yellow-text;
+        }
+        span{
+            font-family: 'Montserrat';
+            font-size: 56px;
+            color: $white-text;
+            font-weight: normal;
+        }
+
+        p{
+            font: $basic-text;
+            width: 678px;
+            color: $white-text;
+            margin-top: 39px;
+            position: relative;
+            right: -77px;
+        }
+
+    }
+    .content-block-2{
+        align-self: flex-end;
+        height: 793px;
+        width: $full-width - $vertical-line-width - $main-left-margin;
+
+        background: $transperent-block;
+        padding-right: $main-right-margin;
+        text-align: right;
+
+        h2{
+            margin-top: 69px;
+            margin-bottom: 5px;
+         
+            font-family: 'Montserrat';
+            font-size: 101px;
+            font-weight: bolder;
+            color: $white-text;
+        }
+        p{  
+            font-weight: bold;
+            width: 622px;
+            position: relative;
+            right: -133px;
+        }
+        .blue{
+            margin-top: 41px;
+            color: $blue-block;
+        }
+    }
+    .vertical-marker{
+        width: 25px;
+        height: 80px;
+        background: $white-text;
+        margin: 49px 0 51px 728px;
+    }
+    footer{        
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 217px;
+        background: $lightblue-block;
+
+        padding: 0 136px 7px 652px;
+    }
+    .contact-container{
+        display: flex;
+        flex-wrap: wrap;
+        position: absolute;
+        top: 1405px;
+        height: 563px;
+        width: $vertical-line-width + $main-left-margin;
+        
+        padding: 130px 0 0 110px;
+        background: $blue-block;
+            .image-container{
+                display: flex;
+                flex-flow: column;
+                width: 73px;
+                height: 231px;
+                justify-content: space-between;
+                align-items: flex-start;
+                img{
+                    display: block;
+                    width: auto;
+                }
+            }
+        }
+        .contact-text-container{
+            display: flex;
+            flex-flow: column;
+            justify-content: space-between;
+            width: 258px;
+            height: 231px;
+            padding: 14px 0 2px 0;
+
+            font-family: 'Montserrat';
+            font-size: 24px;
+            color: $white-text;
+            .tel{
+                margin-bottom: 10px;
+            }
+        }
+        .ref-container{
+            width: 100%;
+            margin-top: -33px;
+            // display: block;
+            // align-self: flex-end;
+            a{
+                font-family: 'Montserrat';
+                font-size: 24px;
+                font-weight: bold;
+                color: $yellow-text;
+                text-decoration: none;
+            }
+        }
+
+// }    
